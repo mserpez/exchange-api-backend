@@ -8,7 +8,7 @@ import _ from 'lodash';
  * @param res
  * @param next
  *
- * Returns array with exchange product objects.
+ * Return an array with common products between exchanges.
  */
 function getAllProducts(req, res, next) {
 
@@ -30,7 +30,7 @@ function getAllProducts(req, res, next) {
  * @param res
  * @param next
  *
- * Returns array with product price objects.
+ * Return an array with product price for each exchange.
  */
 function getProductPrice(req, res, next) {
   const product = req.params.product;
@@ -52,7 +52,7 @@ function getProductPrice(req, res, next) {
 /**
  * @param {string} exchange
  *
- * Returns a product promise from api.
+ * Return a product promise from api.
  */
 function _getProductByExchanges(exchange){
   return apiService.get('exchanges/' + exchange + '/products');
@@ -62,7 +62,7 @@ function _getProductByExchanges(exchange){
  * @param {string} exchange
  * @param {string} product
  *
- * Returns a product price promise from api.
+ * Return a product price promise from api.
  */
 function _getProductPriceByExchanges(exchange, product){
   return apiService.get('exchanges/' + exchange + '/ticker?product=' + product);
