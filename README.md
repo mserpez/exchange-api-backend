@@ -8,7 +8,7 @@ _1. Installation:_
 1. Run ```npm install```.
 1. After install the dependencies, run ```npm start```.
 
-_2. Endpoints available:
+_2. Endpoints available:_
 
 1. ```http://localhost:8007/api/v1/products```
 1. ```http://localhost:8007/api/v1/products/{PROD_NAME}/prices```
