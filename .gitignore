@@ -1,0 +1,13 @@
+# BUILD
+dist
+
+# IDE
+.idea
+
+# Logs
+logs
+*.log
+
+# Other
+package-lock.json
+node_modules
